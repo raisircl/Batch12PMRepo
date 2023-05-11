@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSum.Designer.cs">
+      <DependentUpon>FrmSum.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmWage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSum.resx">
+      <DependentUpon>FrmSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWage.resx">
+      <DependentUpon>FrmWage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
