@@ -51,6 +51,7 @@
             this.txtn1.Name = "txtn1";
             this.txtn1.Size = new System.Drawing.Size(100, 22);
             this.txtn1.TabIndex = 1;
+            this.txtn1.Text = "66";
             // 
             // txtn2
             // 
@@ -58,6 +59,7 @@
             this.txtn2.Name = "txtn2";
             this.txtn2.Size = new System.Drawing.Size(100, 22);
             this.txtn2.TabIndex = 3;
+            this.txtn2.Text = "8";
             // 
             // label2
             // 

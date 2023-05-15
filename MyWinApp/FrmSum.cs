@@ -22,7 +22,7 @@ namespace MyWinApp
             n1 = Convert.ToInt32(txtn1.Text);
             n2 = Convert.ToInt32(txtn2.Text);
             r = n1 + n2;
-           lblResult.Text=r.ToString();
+            lblResult.Text = Convert.ToString(r);
         }
 
     }

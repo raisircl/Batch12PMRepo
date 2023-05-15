@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMultipleEventHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMultipleEventHandling.Designer.cs">
+      <DependentUpon>FrmMultipleEventHandling.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMultipleEventHandling.resx">
+      <DependentUpon>FrmMultipleEventHandling.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSum.resx">
       <DependentUpon>FrmSum.cs</DependentUpon>
