@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDP.Designer.cs">
+      <DependentUpon>FrmDP.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMultipleEventHandling.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDP.resx">
+      <DependentUpon>FrmDP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMultipleEventHandling.resx">
       <DependentUpon>FrmMultipleEventHandling.cs</DependentUpon>
