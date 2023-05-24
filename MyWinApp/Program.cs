@@ -16,7 +16,7 @@ namespace MyWinApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmListAndCombo());
+            Application.Run(new FrmComboBox());
         }
     }
 }
