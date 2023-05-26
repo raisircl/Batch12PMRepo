@@ -35,6 +35,7 @@
             this.btnUpdateCourse = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -111,11 +112,21 @@
             this.checkedListBox1.Size = new System.Drawing.Size(226, 242);
             this.checkedListBox1.TabIndex = 6;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(569, 346);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 84);
+            this.listBox1.TabIndex = 7;
+            // 
             // FrmComboBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 560);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdateCourse);
@@ -140,5 +151,6 @@
         private System.Windows.Forms.Button btnUpdateCourse;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

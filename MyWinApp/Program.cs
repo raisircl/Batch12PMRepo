@@ -16,7 +16,7 @@ namespace MyWinApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmComboBox());
+            Application.Run(new FrmDateAndMonth());
         }
     }
 }
