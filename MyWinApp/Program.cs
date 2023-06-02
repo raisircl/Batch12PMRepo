@@ -16,7 +16,7 @@ namespace MyWinApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm29May2023());
+            Application.Run(new FrmClass2June2023());
         }
     }
 }

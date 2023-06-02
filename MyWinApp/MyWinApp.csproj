@@ -64,6 +64,12 @@
     <Compile Include="FrmCheckListBox.Designer.cs">
       <DependentUpon>FrmCheckListBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmClass2June2023.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClass2June2023.Designer.cs">
+      <DependentUpon>FrmClass2June2023.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmComboBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCheckListBox.resx">
       <DependentUpon>FrmCheckListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClass2June2023.resx">
+      <DependentUpon>FrmClass2June2023.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmComboBox.resx">
       <DependentUpon>FrmComboBox.cs</DependentUpon>
