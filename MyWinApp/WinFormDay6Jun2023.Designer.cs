@@ -35,10 +35,20 @@
             this.imageListSmall = new System.Windows.Forms.ImageList(this.components);
             this.lv1 = new System.Windows.Forms.ListView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmiLargeIcon = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSmallIcon = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiList = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDetail = new System.Windows.Forms.ToolStripMenuItem();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tv1
@@ -75,6 +85,12 @@
             // 
             // lv1
             // 
+            this.lv1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lv1.ContextMenuStrip = this.contextMenuStrip1;
             this.lv1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv1.HideSelection = false;
             this.lv1.LargeImageList = this.imageListLarge;
@@ -84,6 +100,7 @@
             this.lv1.SmallImageList = this.imageListSmall;
             this.lv1.TabIndex = 1;
             this.lv1.UseCompatibleStateImageBehavior = false;
+            this.lv1.DoubleClick += new System.EventHandler(this.lv1_DoubleClick);
             // 
             // splitContainer1
             // 
@@ -102,6 +119,61 @@
             this.splitContainer1.SplitterDistance = 460;
             this.splitContainer1.TabIndex = 2;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiLargeIcon,
+            this.tsmiSmallIcon,
+            this.tsmiList,
+            this.tsmiDetail});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(148, 100);
+            // 
+            // tsmiLargeIcon
+            // 
+            this.tsmiLargeIcon.Name = "tsmiLargeIcon";
+            this.tsmiLargeIcon.Size = new System.Drawing.Size(210, 24);
+            this.tsmiLargeIcon.Text = "Large Icon";
+            this.tsmiLargeIcon.Click += new System.EventHandler(this.tsmiLargeIcon_Click);
+            // 
+            // tsmiSmallIcon
+            // 
+            this.tsmiSmallIcon.Name = "tsmiSmallIcon";
+            this.tsmiSmallIcon.Size = new System.Drawing.Size(210, 24);
+            this.tsmiSmallIcon.Text = "Small Icon";
+            this.tsmiSmallIcon.Click += new System.EventHandler(this.tsmiSmallIcon_Click);
+            // 
+            // tsmiList
+            // 
+            this.tsmiList.Name = "tsmiList";
+            this.tsmiList.Size = new System.Drawing.Size(210, 24);
+            this.tsmiList.Text = "List";
+            this.tsmiList.Click += new System.EventHandler(this.tsmiList_Click);
+            // 
+            // tsmiDetail
+            // 
+            this.tsmiDetail.Name = "tsmiDetail";
+            this.tsmiDetail.Size = new System.Drawing.Size(210, 24);
+            this.tsmiDetail.Text = "Detail";
+            this.tsmiDetail.Click += new System.EventHandler(this.tsmiDetail_Click);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Name";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Date Of Modified";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Type";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Size";
+            // 
             // WinFormDay6Jun2023
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -115,6 +187,7 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -126,5 +199,14 @@
         private System.Windows.Forms.ImageList imageListLarge;
         private System.Windows.Forms.ListView lv1;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ToolStripMenuItem tsmiLargeIcon;
+        private System.Windows.Forms.ToolStripMenuItem tsmiSmallIcon;
+        private System.Windows.Forms.ToolStripMenuItem tsmiList;
+        private System.Windows.Forms.ToolStripMenuItem tsmiDetail;
     }
 }
