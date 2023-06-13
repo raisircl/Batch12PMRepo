@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm13June2023.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm13June2023.Designer.cs">
+      <DependentUpon>Frm13June2023.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm29May2023.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     <Compile Include="FrmMultipleEventHandling.Designer.cs">
       <DependentUpon>FrmMultipleEventHandling.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNotepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotepad.Designer.cs">
+      <DependentUpon>FrmNotepad.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +134,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm13June2023.resx">
+      <DependentUpon>Frm13June2023.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm29May2023.resx">
       <DependentUpon>Frm29May2023.cs</DependentUpon>
@@ -146,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMultipleEventHandling.resx">
       <DependentUpon>FrmMultipleEventHandling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotepad.resx">
+      <DependentUpon>FrmNotepad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSum.resx">
       <DependentUpon>FrmSum.cs</DependentUpon>
@@ -181,6 +199,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\startupb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-folder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
