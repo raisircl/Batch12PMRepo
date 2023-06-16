@@ -206,5 +206,32 @@
   <ItemGroup>
     <None Include="Resources\open-folder.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo-arrow-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo-circular-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\italic-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bold-button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
