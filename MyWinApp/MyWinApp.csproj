@@ -82,6 +82,12 @@
     <Compile Include="FrmComboBox.Designer.cs">
       <DependentUpon>FrmComboBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDataset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataset.Designer.cs">
+      <DependentUpon>FrmDataset.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDateAndMonth.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmComboBox.resx">
       <DependentUpon>FrmComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataset.resx">
+      <DependentUpon>FrmDataset.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDateAndMonth.resx">
       <DependentUpon>FrmDateAndMonth.cs</DependentUpon>
