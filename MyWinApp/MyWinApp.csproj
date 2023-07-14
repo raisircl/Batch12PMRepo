@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -93,6 +94,12 @@
     </Compile>
     <Compile Include="FrmDateAndMonth.Designer.cs">
       <DependentUpon>FrmDateAndMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDept.Designer.cs">
+      <DependentUpon>FrmDept.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDP.cs">
       <SubType>Form</SubType>
@@ -161,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDateAndMonth.resx">
       <DependentUpon>FrmDateAndMonth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDept.resx">
+      <DependentUpon>FrmDept.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDP.resx">
       <DependentUpon>FrmDP.cs</DependentUpon>

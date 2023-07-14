@@ -40,14 +40,19 @@ namespace MyWinApp
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
-            DataRow dr = dt.NewRow();
-            dr["DNo"] = txtDno.Text;
-            dr["DName"] = txtDName.Text;
-            dr["Loc"] = txtLoc.Text;
-            ds.Tables["dtdept"].Rows.Add(dr);
-            reset();
-
+            if (txtDno.Text != "" && txtDName.Text != "")
+            {
+                DataRow dr = dt.NewRow();
+                dr["DNo"] = txtDno.Text;
+                dr["DName"] = txtDName.Text;
+                dr["Loc"] = txtLoc.Text;
+                ds.Tables["dtdept"].Rows.Add(dr);
+                reset();
+            }
+            else
+            {
+                MessageBox.Show("Fill required field");
+            }
         }
         void reset()
         {
