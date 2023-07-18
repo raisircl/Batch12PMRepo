@@ -18,10 +18,12 @@ namespace MyWinApp
             InitializeComponent();
         }
         //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conn"].ConnectionString);
-        SqlConnection conn = new SqlConnection(ConfigurationManager.AppSettings["conn"]);
+        //SqlConnection conn = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=BikeStoreBatch4PM;Persist Security Info=True;User ID=sa;Password=rai11**");
+        SqlConnection conn =new SqlConnection(Common.connectionString);
         SqlCommand comm = new SqlCommand();
         SqlDataAdapter da = new SqlDataAdapter();
         DataSet ds = new DataSet(); 
+        
         private void FrmDept_Load(object sender, EventArgs e)
         {
             //conn.ConnectionString= ConfigurationSettings.AppSettings["conn"];
@@ -35,12 +37,22 @@ namespace MyWinApp
         }
         void loadGrid()
         {
-            comm.CommandText = "select * from production.products";
+            ds.Tables.Clear();
+
+            comm.CommandText = "select * from production.brands";
             comm.Connection = conn; 
             da.SelectCommand = comm;
-            da.Fill(ds, "products");
-            dataGridView1.DataSource = ds.Tables["products"];
+            da.Fill(ds, "brands");
+            dataGridView1.DataSource = ds.Tables["brands"];
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommandBuilder cb = new SqlCommandBuilder(da);
+            da.Update(ds, "brands");
+            MessageBox.Show("data saved");
+            loadGrid(); 
         }
     }
 }
