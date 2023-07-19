@@ -26,16 +26,21 @@ namespace MyWinApp
         {
             loadGrid();
         }
-        void loadGrid()
+        void loadGrid(int bid=0)
         {
             ds.Tables.Clear();
 
-            comm.CommandText = "select * from production.brands";
+            //comm.CommandText = "select * from production.brands";
+            comm.CommandText = "sp_fetchbrands";
+            if(bid !=0) {
+                comm.Parameters.AddWithValue("@bid", bid);
+            }
+            comm.CommandType = CommandType.StoredProcedure;
             comm.Connection = conn;
             da.SelectCommand = comm;
             da.Fill(ds, "brands");
             dgvBrand.DataSource = ds.Tables["brands"];
-
+            comm.Parameters.Clear();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -77,6 +82,67 @@ namespace MyWinApp
             conn.Close();
             comm.Parameters.Clear();
             loadGrid();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if(textBox1.Text.Length>0)
+            {
+                loadGrid(Convert.ToInt32(textBox1.Text));
+            }
+            else
+            {
+                loadGrid(); 
+            }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            int ascii = Convert.ToInt32(e.KeyChar);
+            if((ascii>=48 && ascii<=57) || ascii==8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if(textBox2.Text.Length>0)
+            {
+                loadGrid(textBox2.Text);
+            }
+            else
+            {
+                loadGrid("");
+            }
+        }
+
+        void loadGrid(string bname)
+        {
+            ds.Tables.Clear();
+
+            //comm.CommandText = "select * from production.brands";
+            comm.CommandText = "sp_brands_byname";
+            //if (bname != "")
+            //{
+            //    comm.CommandText = "select * from production.brands where brand_name like '%' + @bname +'%'";
+            //    comm.Parameters.AddWithValue("@bname", bname);
+            //}
+            //else
+            //{
+            //    comm.CommandText = "select * from production.brands";
+            //}
+            comm.Parameters.AddWithValue("@bname", bname);
+            comm.CommandType = CommandType.StoredProcedure;
+            comm.Connection = conn;
+            da.SelectCommand = comm;
+            da.Fill(ds, "brands");
+            dgvBrand.DataSource = ds.Tables["brands"];
+            comm.Parameters.Clear();
         }
     }
 }
